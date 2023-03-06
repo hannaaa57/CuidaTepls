@@ -1,9 +1,9 @@
 # CuidaTepls
 Proyecto prototipos
 
-php 0
+php 0;
 
-css 2
+css 2;
 Registro 2
 Iniciar sesion 2
 Perfil 2
