@@ -15,8 +15,8 @@
     <nav class=" container-fluid bd-gutter flex-wrap flex-lg-nowrap "  aria-label="Main navigation">  
       
       <!--Logo, direcciona al inicio-->
-      <a class="navbar-brand" href="#">
-        <img src="img/CuidaTeLogo.jpg" alt="CuidaTe" width="" height="40">
+      <a class="navbar-brand" href="Inicio.html">
+        <img src="img/CuidaTeLogo.jpg" alt="CuidaTe"  width="" height="40">
       </a>
       
       
@@ -33,104 +33,233 @@
       </div>
     </nav>
   </header>
+  
+  <!--Contenido-->
+  <div class="container-xxl bd-gutter bd-layout bg-dark text-white">
 
-  <form role="form" class="card-body">
-  <div class="form-group">
-      <label>Nombre de usuario</label>
-      <input data-username="" class="form-control">
+    <div class="bd-content bg-light border-top py-3">
+      <!--Foto-->
+      <div class="justify-content-center text-center my-3 border-bottom">
+        <img src="img/persona.jpg" alt="Foto de perfil" width="200" height="" class="d-block mx-auto rounded-circle">
+        <button type="button" class="btn">Cambiar foto de perfil</button>
+      </div>
+      <!--Datos perfil-->
+      <div class="container-md text-black">
+        <!--Nombre-->
+        <div class="row ">
+          <label for="nombre2" class="col-sm-3 col-form-label">Nombre</label>
+          <div class="col-sm-9">
+            <input type="text"  value="Yo" class="form-control" id="correo" disabled>
+          </div>
+        </div>
+        <!--Correo-->
+        <div class="row mb-3 my-3">
+          <label for="correo2" class="col-sm-3 col-form-label">Correo electronico</label>
+          <div class="col-sm-9">
+            <input type="email" value="micorreo@gmail.com" class="form-control" id="correo" disabled>
+          </div>
+        </div>
+         <!--Numero-->
+         <div class="row mb-3 my-3">
+          <label for="telefono-2" class="col-sm-3 col-form-label">Telefono</label>
+          <div class="col-sm-9">
+            <input type="tel" value="6677894513" class="form-control" id="telefono" disabled>
+          </div>
+        </div>
+        <!--Fecha nac-->
+        <div class="row mb-3 my-3">
+          <label for="fechNac2" class="col-sm-3 col-form-label">Fecha de nacimiento</label>
+          <div class="col-sm-9">
+            <input type="date" value="2005-05-07" class="form-control" id="fechNac" disabled>
+          </div>
+        </div>
+        <!--Genero-->
+        <div class="row mb-3 my-3">
+          <label for="genero2" class="col-sm-3 col-form-label">Genero</label>
+          <div class="col-sm-9">
+            <input type="text" value="Mujer" class="form-control" id="genero" disabled>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Datos especificos necesarios-->
+    <!--Provisional-->
+    <div class="bd-content bg-light border-top ">
+      <div class="container-md text-black py-3">
+        <!--Tipo de sangre-->
+        <div class="row mb-3 my-3">
+          <label for="nombre2" class="col-sm-3 col-form-label">Tipo de sangre</label>
+          <div class="col-sm-9">
+            <input type="text"  value="" class="form-control" id="correo" >
+          </div>
+        </div>
+        <div class="justify-content-lg-end align-items-end text-end border-bottom">
+          <label class="form-label" for="inlineFormSelectPref">Visible</label>
+          <select class="border-radius 3rem" id="inlineFormSelectPref">
+            <option  value="0">Elegir...</option>
+            <option  value="1">Simpre</option>
+            <option value="2">En caso de emergencia</option>
+            <option value="3">Nunca</option>
+          </select>
+        </div>
+        <!--Alergias-->
+        <div class="row mb-3 my-3">
+          <label for="correo2" class="col-sm-3 col-form-label">Alergias</label>
+          <div class="col-sm-9">
+            <input type="email" value="" class="form-control" id="correo" >
+          </div>
+        </div>
+        <div class="justify-content-lg-end align-items-end text-end border-bottom">
+          <label class="form-label" for="inlineFormSelectPref">Visible</label>
+          <select class="border-radius 3rem" id="inlineFormSelectPref">
+            <option  value="0">Elegir...</option>
+            <option  value="1">Simpre</option>
+            <option value="2">En caso de emergencia</option>
+            <option value="3">Nunca</option>
+          </select>
+        </div>
+         <!--Enferemedades-->
+         <div class="row mb-3 my-3">
+          <label for="telefono-2" class="col-sm-3 col-form-label">Enfermedades</label>
+          <div class="col-sm-9">
+            <input type="tel" value="" class="form-control" id="telefono" >
+          </div>
+        </div>
+        <div class="justify-content-lg-end align-items-end text-end border-bottom">
+          <label class="form-label" for="inlineFormSelectPref">Visible</label>
+          <select class="border-radius 3rem" id="inlineFormSelectPref">
+            <option  value="0">Elegir...</option>
+            <option  value="1">Simpre</option>
+            <option value="2">En caso de emergencia</option>
+            <option value="3">Nunca</option>
+          </select>
+        </div>
+        <!--etc-->
+        <div class="row mb-3 my-3">
+          <label for="telefono-2" class="col-sm-3 col-form-label">etc</label>
+          <div class="col-sm-9">
+            <input type="tel" value="" class="form-control" id="telefono" >
+          </div>
+        </div>
+        <div class="justify-content-lg-end align-items-end text-end ">
+          <label class="form-label" for="inlineFormSelectPref">Visible</label>
+          <select class="border-radius 3rem" id="inlineFormSelectPref">
+            <option  value="0">Elegir...</option>
+            <option  value="1">Simpre</option>
+            <option value="2">En caso de emergencia</option>
+            <option value="3">Nunca</option>
+          </select>
+        </div>
+      </div>
+
+      <!--Persona de confianza-->
+      <div class="bd-content bg-light border-top ">
+        <div class="container-md text-black py-3">
+          <h2>Persona de confianza</h2>
+          <!--Nombre-->
+          <div class="row mb-3 my-3">
+            <label for="nombrePC2" class="col-sm-3 col-form-label">Nombre</label>
+            <div class="col-sm-9">
+              <input type="text"  value="" class="form-control" id="nombrePC" >
+            </div>
+          </div>
+          <!--Numero-->
+          <div class="row mb-3 my-3">
+            <label for="telefonoPC2" class="col-sm-3 col-form-label">Telefono</label>
+            <div class="col-sm-9">
+              <input type="tel" value="" class="form-control" id="telefonoPC" >
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <!--Datos opcionales-->
+    <!--Provisional-->
+    <div class="bd-content bg-light border-top ">
+      <div class="container-md text-black py-3">
+        <!-- -->
+        <div class="row mb-3 my-3">
+          <label for="nombre2" class="col-sm-3 col-form-label">Nombre de su perro</label>
+          <div class="col-sm-9">
+            <input type="text"  value="" class="form-control" id="correo" >
+          </div>
+        </div>
+        <div class="justify-content-lg-end align-items-end text-end border-bottom">
+          <label class="form-label" for="inlineFormSelectPref">Visible</label>
+          <select class="border-radius 3rem" id="inlineFormSelectPref">
+            <option  value="0">Elegir...</option>
+            <option  value="1">Simpre</option>
+            <option value="2">En caso de emergencia</option>
+            <option value="3">Nunca</option>
+          </select>
+        </div>
+        <!--Domicilio-->
+        <div class="row mb-3 my-3">
+          <label for="correo2" class="col-sm-3 col-form-label">Domicilio</label>
+          <div class="col-sm-9">
+            <input type="email" value="" class="form-control" id="correo" >
+          </div>
+        </div>
+        <div class="justify-content-lg-end align-items-end text-end border-bottom">
+          <label class="form-label" for="inlineFormSelectPref">Visible</label>
+          <select class="border-radius 3rem" id="inlineFormSelectPref">
+            <option  value="0">Elegir...</option>
+            <option  value="1">Simpre</option>
+            <option value="2">En caso de emergencia</option>
+            <option value="3">Nunca</option>
+          </select>
+        </div>
+         <!--Estado civil-->
+         <div class="row mb-3 my-3">
+          <label for="telefono-2" class="col-sm-3 col-form-label">Estado civil?</label>
+          <div class="col-sm-9">
+            <input type="tel" value="" class="form-control" id="telefono" >
+          </div>
+        </div>
+        <div class="justify-content-lg-end align-items-end text-end border-bottom">
+          <label class="form-label" for="inlineFormSelectPref">Visible</label>
+          <select class="border-radius 3rem" id="inlineFormSelectPref">
+            <option  value="0">Elegir...</option>
+            <option  value="1">Simpre</option>
+            <option value="2">En caso de emergencia</option>
+            <option value="3">Nunca</option>
+          </select>
+        </div>
+        <!--etc-->
+        <div class="row mb-3 my-3">
+          <label for="telefono-2" class="col-sm-3 col-form-label">etc</label>
+          <div class="col-sm-9">
+            <input type="tel" value="" class="form-control" id="telefono" >
+          </div>
+        </div>
+        <div class="justify-content-lg-end align-items-end text-end ">
+          <label class="form-label" for="inlineFormSelectPref">Visible</label>
+          <select class="border-radius 3rem" id="inlineFormSelectPref">
+            <option  value="0">Elegir...</option>
+            <option  value="1">Simpre</option>
+            <option value="2">En caso de emergencia</option>
+            <option value="3">Nunca</option>
+          </select>
+        </div>
+      </div>
+
+
+    </div>
+    
+    <!--Botones-->
+    <div class="bd-content bg-light border-top ">
+      <div class="container-md text-black py-4">
+        <button type="submit" onclick="window.location.href='Perfil.html'" class="btn btn-primary">Guardar</button>
+        <a href="Perfil.html" class="btn btn-secondary ps-3">Cancelar</a>      
+      </div>
+    </div>
+    
+    
   </div>
-  <div class="form-group">
-      <label>Nombre</label>
-      <input data-name="" class="form-control">
-  </div>
-  <div class="form-group">
-      <label>Género</label>
-      <select data-gender="" class="custom-select">
-          <option value="female">Femenino</option>
-          <option value="male">Masculino</option>
-          <option value="other">Otro</option>
-          <option value="decline">Prefiero no responder</option>
-      </select>
-  </div>
-  <div class="form-group">
-      <label>País</label><select data-countries="" class="custom-select">
-          <option value=""></option>
-          <option value="AF"> Afghanistan </option>
-          <option value="AX"> Åland Islands </option>
-          <option value="AL"> Albania </option>
-          <option value="DZ"> Algeria </option>
-          <option value="AS"> American Samoa </option>
-          <option value="AD"> Andorra </option>
-          <option value="AO"> Angola </option>
-          <option value="AI"> Anguilla </option>
-          <option value="AQ"> Antarctica </option>
-          <option value="AG"> Antigua and Barbuda </option>
-          <option value="AR"> Argentina </option>
-          <option value="AM"> Armenia </option>
-          <option value="AW"> Aruba </option>
-          <option value="AU"> Australia </option>
-          <option value="AT"> Austria </option>
-          <option value="AZ"> Azerbaijan </option>
-          <option value="BS"> Bahamas </option>
-          <option value="BH"> Bahrain </option>
-          <option value="BD"> Bangladesh </option>
-          <option value="BB"> Barbados </option>
-          <option value="BY"> Belarus </option>
-          <option value="BE"> Belgium </option>
-          <option value="BZ"> Belize </option>
-          <option value="BJ"> Benin </option>
-          <option value="BM"> Bermuda </option>
-      </select>
-  </div>
-  <div class="form-group">
-      <label>Estado</label>
-      <select data-states="" class="custom-select">
-          <option value="AGU"> Aguascalientes </option>
-          <option value="BCN"> Baja California </option>
-          <option value="BCS"> Baja California Sur </option>
-          <option value="CAM"> Campeche </option>
-          <option value="CHH"> Chihuahua </option>
-          <option value="CHP"> Chiapas </option>
-          <option value="CMX"> Ciudad de México </option>
-          <option value="COA"> Coahuila de Zaragoza </option>
-          <option value="COL"> Colima </option>
-          <option value="DUR"> Durango </option>
-          <option value="GRO"> Guerrero </option>
-          <option value="GUA"> Guanajuato </option>
-          <option value="HID"> Hidalgo </option>
-          <option value="JAL"> Jalisco </option>
-          <option value="MEX"> México </option>
-          <option value="MIC"> Michoacán de Ocampo </option>
-          <option value="MOR"> Morelos </option>
-          <option value="NAY"> Nayarit </option>
-          <option value="NLE"> Nuevo León </option>
-          <option value="OAX"> Oaxaca </option>
-          <option value="PUE"> Puebla </option>
-          <option value="QUE"> Querétaro </option>
-          <option value="ROO"> Quintana Roo </option>
-          <option value="SIN"> Sinaloa </option>
-          <option value="SLP"> San Luis Potosí </option>
-          <option value="SON"> Sonora </option>
-          <option value="TAB"> Tabasco </option>
-          <option value="TAM"> Tamaulipas </option>
-          <option value="TLA"> Tlaxcala </option>
-          <option value="VER"> Veracruz de Ignacio de la Llave </option>
-          <option value="YUC"> Yucatán </option>
-          <option value="ZAC"> Zacatecas </option>
-      </select>
-  </div>
-  <div class="form-group">
-      <label>Fecha de nacimiento</label>
-      <input name="" max="2023-03-03" size="16" type="date" class="form-control">
-  </div>
-  <div class="mt-3">
-      <button type="submit" class="btn btn-primary mr-2"> Guardar cambios </button>
-      <a href="Datos.html" class="btn btn-cancel">Cancelar</a>
-  </div>
-  </form>
 
   <!--Footer-->
-  <section class="">
+  <section class="align-self-end bd-footer">
   <footer class="bg-dark text-white text-center">
     <div class="conteiner p-4">
         <section class="mb-4">

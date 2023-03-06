@@ -1,6 +1,4 @@
 <!--Esta pagina se muestra cuando alguien externo escane el QR-->
-
-
 <html>
 <head>
   <meta charset="UTF-8">
@@ -14,100 +12,172 @@
 </head>
 <body>
    <!--Barra de navegación-->
-   <header class="navbar navbar-default navbar-fixed-top navbar-light bg-light">
+  <header class="navbar navbar-default navbar-fixed-top navbar-light bg-light">
     <nav class=" container-fluid bd-gutter flex-wrap flex-lg-nowrap "  aria-label="Main navigation">  
       
       <!--Logo, direcciona al inicio-->
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="Inicio.html">
         <img src="img/CuidaTeLogo.jpg" alt="CuidaTe" width="" height="40">
       </a>
       
       
-      <!--Perfil-->
-      <div class="d-flex dropdown " data-bs-toggle="dropdown" aria-expanded="false">
-        <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="img/persona.jpg" alt="mdo" width="40" height="40" class="rounded-circle">
-        </a>
-        <ul class="dropdown-menu dropdown-menu-end text-small shadow">
-          <li><a class="dropdown-item" href="Perfil.html">Perfil</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="Inicio.html">Cerrar sesion</a></li>
-        </ul>
+      <!--Botón de registrarse-->
+      <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+        <button class="btn btn-dark"  onclick="window.location.href='Registrarse.html'">Registrarse</button>
       </div>
     </nav>
   </header>
 
-  <div data-v-28251a17="" role="tab" aria-labelledby="nav-user-info-tab" class="tab-pane fade show active">
-    <div data-v-581eb24b="" data-v-28251a17="" class="card-body">
-      <div data-v-581eb24b="" class="fields-border">
-        <div data-v-581eb24b="" class="form-group row padding-field">
-          <div data-v-581eb24b="" class="col-sm-3">
-            <strong data-v-581eb24b="">Nombre de usuario</strong>
-        </div><div data-v-581eb24b="" class="col-sm-9 field-data">
-            <span data-v-581eb24b="" title="francisco.orozco" class="user-rank-international-master"><!---->https://omegaup.com/profile/francisco.orozco/</span>
+  <!--Contenido-->
+  <!--Mostrar solo alguna informacion y un boton de emergencia-->
+  <div class="container-xxl bd-gutter bd-layout bg-dark text-white">
+    <!--Botones-->
+    <div class="bd-content bg-light border-top align-items-center justify-content-center">
+      <div class="container-md text-black py-4">
+        <label class="form-label fs-3" for="">En caso de emergencia, llena los siguientes datos y pulsa el botón, este te mostrara mas informacion sobre mi y le mandara un mensaje a una persona de confianza.</label>
+        <!--Nombre-->
+        <div class="row mb-3 my-3">
+          <label for="nombreH2" class="col-sm-3 col-form-label">Nombre</label>
+          <div class="col-sm-9">
+            <input type="text"  value="" class="form-control" id="nombreH" >
+          </div>
         </div>
+        <!--Numero-->
+        <div class="row mb-3 my-3">
+          <label for="telefonoH2" class="col-sm-3 col-form-label">Telefono</label>
+          <div class="col-sm-9">
+            <input type="tel" value="" class="form-control" id="telefonoH" >
+          </div>
+        </div>
+        <div class="d-grid gap-2">
+          <button type="submit"  class="btn btn-lg btn-danger" onclick="window.location.href='Emergencia.html'">Emergencia</button>  
+        </div>
+        
+      </div>
     </div>
-    <div data-v-581eb24b="" class="form-group row padding-field">
-        <div data-v-581eb24b="" class="col-sm-3">
-            <strong data-v-581eb24b="">Nombre</strong>
+
+
+    <div class="bd-content bg-light border-top py-3">
+      <!--Foto-->
+      <div class="justify-content-center text-center my-3 pb-3 border-bottom">
+        <img src="img/persona.jpg" alt="Foto de perfil" width="200" height="" class="d-block mx-auto rounded-circle">
+      </div>
+      <!--Datos perfil-->
+      <div class="container-md text-black">
+        <!--Nombre-->
+        <div class="row ">
+          <label for="nombre2" class="col-sm-3 col-form-label">Nombre</label>
+          <div class="col-sm-9">
+            <input type="text"  value="Yo" class="form-control" id="correo" disabled>
+          </div>
         </div>
-        <div data-v-581eb24b="" class="col-sm-9 field-data"> Francisco López-Orozco </div>
-    </div><!----><div data-v-581eb24b="">
-        <div data-v-581eb24b="" class="form-group row padding-field">
-            <div data-v-581eb24b="" class="col-sm-3">
-                <strong data-v-581eb24b="">País / Región</strong>
-            </div>
-            <div data-v-581eb24b="" class="col-sm-9 field-data">
-                <strong data-v-581eb24b="">Mexico</strong>
-            </div>
+        <!--Correo-->
+        <div class="row mb-3 my-3">
+          <label for="correo2" class="col-sm-3 col-form-label">Correo electronico</label>
+          <div class="col-sm-9">
+            <input type="email" value="micorreo@gmail.com" class="form-control" id="correo" disabled>
+          </div>
         </div>
-        <div data-v-581eb24b="" class="form-group row padding-field">
-            <div data-v-581eb24b="" class="col-sm-3">
-                <strong data-v-581eb24b="">Estado</strong>
-            </div>
-            <div data-v-581eb24b="" class="col-sm-9 field-data">
-                <strong data-v-581eb24b="">Chihuahua</strong>
-            </div>
+         <!--Numero-->
+         <div class="row mb-3 my-3">
+          <label for="telefono-2" class="col-sm-3 col-form-label">Telefono</label>
+          <div class="col-sm-9">
+            <input type="tel" value="6677894513" class="form-control" id="telefono" disabled>
+          </div>
         </div>
-        <div data-v-581eb24b="" class="form-group row padding-field">
-            <div data-v-581eb24b="" class="col-sm-3">
-                <strong data-v-581eb24b="">Escuela</strong>
-            </div>
-            <div data-v-581eb24b="" class="col-sm-9 field-data">
-                <a data-v-581eb24b="" href="/schools/profile/6308/">
-                    <strong data-v-581eb24b="">Universidad Autonoma de Ciudad Juarez</strong>
-                </a>
-            </div>
+        <!--Fecha nac-->
+        <div class="row mb-3 my-3">
+          <label for="fechNac2" class="col-sm-3 col-form-label">Fecha de nacimiento</label>
+          <div class="col-sm-9">
+            <input type="date" value="2005-05-07" class="form-control" id="fechNac" disabled>
+          </div>
         </div>
-        <div data-v-581eb24b="" class="form-group row padding-field">
-            <div data-v-581eb24b="" class="col-sm-3">
-                <strong data-v-581eb24b="">Fecha de graduación</strong>
-            </div>
-            <div data-v-581eb24b="" class="col-sm-9 field-data">
-                <strong data-v-581eb24b="">31/8/2002</strong>
-            </div>
-        </div>
-        <div data-v-581eb24b="" class="form-group row padding-field">
-            <div data-v-581eb24b="" class="col-sm-3">
-                <strong data-v-581eb24b="">Rango de autor</strong>
-                <a data-v-581eb24b="" href="https://blog.omegaup.com/categorias/" target="_blank">
-                    <em data-v-581eb24b="" class="glyphicon glyphicon-question-sign"></em>
-                </a>
-            </div>
-            <div data-v-581eb24b="" class="col-sm-9 field-data">
-              <strong data-v-581eb24b="">
-                <span data-v-581eb24b="" title="ω" class="user-rank-international-master"><!----> ω </span>
-              </strong>
-            </div>
+        <!--Genero-->
+        <div class="row mb-3 my-3">
+          <label for="genero2" class="col-sm-3 col-form-label">Genero</label>
+          <div class="col-sm-9">
+            <input type="text" value="Mujer" class="form-control" id="genero" disabled>
           </div>
         </div>
       </div>
-      <a data-v-581eb24b="" href="/submissions/francisco.orozco/"> Ver los últimos envíos realizados por francisco.orozco </a>
     </div>
+
+    <!--Datos especificos necesarios-->
+    <!--Provisional-->
+    <div class="bd-content bg-light border-top ">
+      <div class="container-md text-black py-3">
+        <!--Tipo de sangre-->
+        <div class="row mb-3 my-3">
+          <label for="nombre2" class="col-sm-3 col-form-label">Tipo de sangre</label>
+          <div class="col-sm-9">
+            <input type="text"  value="p-" class="form-control" id="correo" disabled >
+          </div>
+        </div>
+        <!--Alergias-->
+        <div class="row mb-3 my-3">
+          <label for="correo2" class="col-sm-3 col-form-label">Alergias</label>
+          <div class="col-sm-9">
+            <input type="email" value="muchas" class="form-control" id="correo" disabled>
+          </div>
+        </div>
+         <!--Enferemedades-->
+         <div class="row mb-3 my-3">
+          <label for="telefono-2" class="col-sm-3 col-form-label">Enfermedades</label>
+          <div class="col-sm-9">
+            <input type="tel" value="depende" class="form-control" id="telefono"disabled >
+          </div>
+        </div>
+        <!--etc-->
+        <div class="row mb-3 my-3">
+          <label for="telefono-2" class="col-sm-3 col-form-label">etc</label>
+          <div class="col-sm-9">
+            <input type="tel" value="etc" class="form-control" id="telefono" disabled>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--Datos opcionales-->
+    <!--Provisional-->
+    <div class="bd-content bg-light border-top ">
+      <div class="container-md text-black py-3">
+        <!-- -->
+        <div class="row mb-3 my-3">
+          <label for="nombre2" class="col-sm-3 col-form-label">Nombre de su perro</label>
+          <div class="col-sm-9">
+            <input type="text"  value="sgdg" class="form-control" id="correo" disabled >
+          </div>
+        </div>
+        <!--Domicilio-->
+        <div class="row mb-3 my-3">
+          <label for="correo2" class="col-sm-3 col-form-label">Domicilio</label>
+          <div class="col-sm-9">
+            <input type="email" value="mi casa" class="form-control" id="correo" disabled>
+          </div>
+        </div>
+         <!--Estado civil-->
+         <div class="row mb-3 my-3">
+          <label for="telefono-2" class="col-sm-3 col-form-label">Estado civil?</label>
+          <div class="col-sm-9">
+            <input type="tel" value="no" class="form-control" id="telefono" disabled >
+          </div>
+        </div>
+        <!--etc-->
+        <div class="row mb-3 my-3">
+          <label for="telefono-2" class="col-sm-3 col-form-label">etc</label>
+          <div class="col-sm-9">
+            <input type="tel" value="etc" class="form-control" id="telefono" disabled >
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    
   </div>
 
   <!--Footer-->
-  <section class="">
+  <section class="align-self-end bd-footer">
   <footer class="bg-dark text-white text-center">
     <div class="conteiner p-4">
         <section class="mb-4">

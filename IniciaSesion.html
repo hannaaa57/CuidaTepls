@@ -11,84 +11,89 @@
 	<title>Inicia sesion</title>
 </head>
 <body>
-    <!--Poner bonito el css*-->
-	<style type="text/css">
-	
-	.text{
+   
+  <!--Logo-->
+  <div class="py-3 container-md">
+    <img  class="img-fluid mx-auto d-block" src="img/CuidaTeLogo.jpg" alt="CuidaTe" width="200"> 
+  </div>
 
-		height: 25px;
-		border-radius: 5px;
-		padding: 4px;
-		border: solid thin #aaa;
-		width: 100%;
-	}
+  <!--Registro-->
+  <section class="container-fluid">
+    <div class="container-md py-5">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+              <h3 class="mb-5">Iniciar sesion</h3>
+              <!--Correo-->
+              <div class="form-outline mb-4">
+                <input type="email" id="email" class="form-control form-control-lg">
+                <label class="form-label" for="email-2" style="margin-left: 0px;">Correo electronico</label>
+                <div class="form-notch">
+                  <div class="form-notch-leading" style="width: 9px;"></div>
+                  <div class="form-notch-middle" style="width: 40px;"></div>
+                  <div class="form-notch-trailing"></div>
+                </div>
+              </div>
+             
+              <!--Contraseña-->
+              <div class="form-outline mb-4">
+                <input type="password" id="contra" class="form-control form-control-lg">
+                <label class="form-label" for="contra-2" style="margin-left: 0px;">Contraseña</label>
+                <div class="form-notch">
+                  <div class="form-notch-leading" style="width: 9px;"></div>
+                  <div class="form-notch-middle" style="width: 40px;"></div>
+                  <div class="form-notch-trailing"></div>
+                </div>
+              </div>
 
-	#button{
+              <div class="form-check d-flex justify-content-start mb-4">
+                <input class="form-check-input" type="checkbox" value="" id="form1Example3">
+                <label class="form-check-label" for="form1Example3"> Recordar contraseña</label>
+              </div>
+              <button class="btn btn-lg btn-block btn-primary" style="background-color: #dd4b39;" type="submit" onclick="window.location.href='EditarDatos.html'"> Iniciar sesion</button>
+              <hr class="my-4">
+              <button class="btn btn-primary btn-lg btn-block" type="submit" onclick="window.location.href='Registrarse.html'">Registrarse</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-		padding: 10px;
-		width: 100px;
-		color: white;
-		background-color: lightblue;
-		border: none;
-	}
-
-	#box{
-
-		background-color: grey;
-		margin: auto;
-		width: 300px;
-		padding: 20px;
-	}
-
-	</style>
-
-	<div id="box">
-		
-		<form method="post">
-			<div style="font-size: 20px;margin: 10px;color: white;">Inicia sesion</div>
-
-			<input class="text" type="text" name="user_name"><br><br>
-			<input class="text" type="password" name="password"><br><br>
-
-			<input id="button" type="submit" value="Iniciar sesion"><br><br>
-
-			<a href="Registrarse.html">Click para registrarse</a><br><br>
-		</form>
-	</div>
-  
-   <!--Footer-->
-   <section class="">
-    <footer class="bg-dark text-white text-center">
-      <div class="conteiner p-4">
-         <section class="mb-4">
-           <!-- Facebook -->
-           <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-             <i class="fa-brands fa-facebook"></i>
-           </a>
-           <!-- Twitter -->
-           <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-             <i class="fab fa-twitter"></i>
-           </a>
-           <!-- Instagram -->
-           <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-             <i class="fa-brands fa-instagram"></i>
-           </a>
-         </section>
-       </div>
-       <section class="mb-4 me-2 ms-2">
-         <p>
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
-           repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
-           eum harum corrupti dicta, aliquam sequi voluptate quas.
-         </p>
-       </section>
-       
-       <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-         © 2023 Copyright:
-         <a class="text-reset fw-bold" href="Inicio.html">CuidaTe.com</a>
-       </div>
-     
-     </footer>
-   </section>
+  <!--Footer-->
+  <section class="align-self-end bd-footer">
+  <footer class="bg-dark text-white text-center">
+    <div class="conteiner p-4">
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </section>
+      </div>
+      <section class="mb-4 me-2 ms-2">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+          repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+          eum harum corrupti dicta, aliquam sequi voluptate quas.
+        </p>
+      </section>
+      
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+        © 2023 Copyright:
+        <a class="text-reset fw-bold" href="Inicio.html">CuidaTe.com</a>
+      </div>
+    
+    </footer>
+  </section>
 </body>
 </html>
